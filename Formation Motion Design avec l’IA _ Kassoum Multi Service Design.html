@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Formation Motion Design avec l’IA | Kassoum Multi Service Design</title>
+<meta name="description" content="Apprends à créer des vidéos publicitaires, des animations, des films et des séries avec l’intelligence artificielle. 5 000 FCFA, accès à vie.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,800&family=DM+Sans:wght@400;500;700&display=swap">
+<style>
+:root{--bg:#f3f8f1;--surface:#fff;--ink:#0f1f12;--muted:#4d5f50;--line:#d3e2d0;--violet:#0a5206;--tint:#e2f0df;--navy:#0a4d06;--sig:#ffc932;--on-sig:#0f1f12;color-scheme:light;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#08120a;--surface:#0f1d11;--ink:#eaf5e8;--muted:#9bb59a;--line:#1f3a22;--violet:#62c25a;--tint:#12281a;--navy:#0a4d06;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#08120a;--surface:#0f1d11;--ink:#eaf5e8;--muted:#9bb59a;--line:#1f3a22;--violet:#62c25a;--tint:#12281a;--navy:#0a4d06;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 "DM Sans",system-ui,-apple-system,"Segoe UI",sans-serif}
+h1,h2,h3{font-family:"Bricolage Grotesque","DM Sans",system-ui,sans-serif;line-height:1.12;letter-spacing:-.02em;margin:0}
+p{margin:0 0 1rem}
+.wrap{max-width:1040px;margin:0 auto;padding:0 1.25rem}
+section{padding:4rem 0}
+h2{font-size:clamp(1.7rem,4.5vw,2.5rem);font-weight:800;max-width:24ch;margin-bottom:1.25rem}
+h3{font-size:1.2rem;font-weight:800;margin-bottom:.35rem}
+.muted{color:var(--muted)}
+a:focus-visible,summary:focus-visible{outline:3px solid var(--violet);outline-offset:3px}
+.btn{display:inline-block;background:var(--sig);color:var(--on-sig);font-weight:700;font-size:1.05rem;text-decoration:none;padding:.95rem 1.6rem;border-radius:12px;text-align:center}
+.btn:hover{filter:brightness(1.06)}
+.btn:focus-visible{outline-color:#fff}
+
+/* Hero */
+.hero{background:var(--navy);color:#f1f8ef;padding:1.25rem 0 4rem}
+.brand{display:flex;align-items:center;gap:.8rem;font-weight:700;font-size:.95rem;margin-bottom:2.5rem}
+.logo{display:block;height:58px;width:auto;background:#fff;border-radius:12px;padding:5px}
+.hero h1{font-size:clamp(2.1rem,5.4vw,3.5rem);font-weight:800;max-width:20ch;margin-bottom:1.25rem}
+.hero .sub{font-size:clamp(1.1rem,2.5vw,1.35rem);max-width:46ch;color:#d5e8d1}
+.hero .lead{max-width:60ch;color:#b9d3b5}
+.cta-row{display:flex;flex-wrap:wrap;gap:.75rem 1.25rem;align-items:center;margin-top:1.75rem}
+.cta-row small{color:#b9d3b5;font-size:.95rem}
+.tl{position:relative;margin-top:3.25rem;padding-top:1.1rem;border-top:1px solid rgba(255,255,255,.14)}
+.track{position:relative;height:34px;margin-bottom:8px;background:rgba(255,255,255,.05);border-radius:6px}
+.clip{position:absolute;top:3px;bottom:3px;left:var(--l);width:var(--w);border-radius:5px;padding:0 .6rem;font:700 .74rem/28px "DM Sans",system-ui,sans-serif;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;color:#fff}
+.v{background:#2a9d25}.a{background:#f1f8ef;color:#0a3a06}.t{background:#8fd18a;color:#0a3a06}
+.head{position:absolute;top:0;bottom:0;left:62%;width:2px;background:var(--sig);animation:sweep 2.6s cubic-bezier(.2,.7,.2,1) both}
+.head::before{content:"";position:absolute;top:0;left:-5px;width:12px;height:12px;background:var(--sig);border-radius:2px 2px 6px 6px}
+@keyframes sweep{from{left:0}}
+@media (prefers-reduced-motion:reduce){.head{animation:none}html{scroll-behavior:auto}}
+
+/* Pourquoi */
+.can{list-style:none;margin:1.5rem 0;padding:0;display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:.75rem 1.5rem}
+.can li{padding:.2rem 0 .2rem 1rem;border-left:3px solid var(--violet)}
+.punch{font-family:"Bricolage Grotesque",system-ui,sans-serif;font-weight:800;font-size:1.35rem;max-width:30ch}
+
+/* Modules */
+.mods{list-style:none;margin:2rem 0 0;padding:0;counter-reset:m}
+.mods li{display:grid;grid-template-columns:3rem 1fr;gap:0 1rem;padding:1.3rem 0;border-top:1px solid var(--line)}
+.mods li::before{counter-increment:m;content:counter(m);font:800 2.2rem/1 "Bricolage Grotesque",system-ui,sans-serif;color:var(--violet)}
+.mods p{margin:0;color:var(--muted)}
+
+/* Bonus */
+.bon{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:1rem;margin-top:2rem}
+.bon div{background:var(--tint);border-radius:16px;padding:1.4rem}
+.bon b{display:block;color:var(--violet);font-size:.95rem;margin-bottom:.4rem}
+.bon p{margin:0;color:var(--muted)}
+
+/* Public */
+.who{list-style:none;margin:1.5rem 0;padding:0;max-width:640px}
+.who li,.incl li{position:relative;padding:.55rem 0 .55rem 2rem;border-top:1px solid var(--line)}
+.who li::before,.incl li::before{content:"✓";position:absolute;left:0;top:.5rem;font-weight:800;color:var(--violet)}
+
+/* Prix */
+.price{background:var(--navy);color:#f1f8ef;border-radius:22px;padding:2.25rem 1.5rem;max-width:640px}
+.price h2{font-size:1.5rem;margin-bottom:.5rem}
+.amt{font:800 clamp(3rem,10vw,4.5rem)/1 "Bricolage Grotesque",system-ui,sans-serif;margin:.5rem 0 .25rem;color:var(--sig)}
+.amt span{font-size:.4em;color:#f1f8ef}
+.incl{list-style:none;margin:1.5rem 0;padding:0}
+.incl li{border-color:rgba(255,255,255,.14)}
+.incl li::before{color:var(--sig)}
+.price .btn{display:block}
+.price small{display:block;margin-top:.9rem;color:#b9d3b5;text-align:center}
+
+/* Réalisations */
+.vids{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,240px),1fr));gap:1.5rem 1.25rem;margin-top:1.75rem;align-items:start}
+.vid video{display:block;width:100%;height:auto;max-height:78vh;background:#000;border-radius:14px;object-fit:contain}
+.vid figcaption{margin-top:.6rem;font-weight:700;font-size:.98rem}
+.vid figcaption span{display:block;font-weight:400;color:var(--muted);font-size:.9rem}
+.vids-2{margin-top:3rem}
+.sub2{font-size:1.35rem;font-weight:800;margin-top:3rem}
+
+/* Photos */
+.hg,.fg{display:grid;gap:2rem;align-items:center}
+@media (min-width:860px){.hg{grid-template-columns:1fr 1.1fr;gap:1.5rem}.fg{grid-template-columns:1.3fr .7fr}}
+.hw{position:relative;width:100%;max-width:640px;justify-self:center}
+.hw::before{content:"";position:absolute;left:6%;right:6%;bottom:0;height:72%;background:radial-gradient(ellipse at 50% 100%,rgba(255,201,50,.45),rgba(42,157,37,.55) 40%,rgba(42,157,37,0) 72%)}
+.hw::after{content:"";position:absolute;z-index:2;left:0;right:0;bottom:0;height:34%;background:linear-gradient(to top,#2a9d25 0%,rgba(42,157,37,.85) 30%,rgba(42,157,37,0) 100%);border-radius:0 0 24px 24px}
+.hg-i{position:relative;z-index:1;display:block;width:100%;height:auto}
+@media (max-width:859px){.hw{justify-self:stretch;width:auto;max-width:none;margin:0 -1.25rem}.hw::after{border-radius:0}}
+.fw{position:relative;justify-self:center;display:flex;justify-content:center;padding:0 1.5rem}
+.fw::before{content:"";position:absolute;left:50%;bottom:14%;width:min(300px,100%);aspect-ratio:1;transform:translateX(-50%);background:#2a9d25;border-radius:50%}
+.fi{position:relative;display:block;width:auto;max-width:100%;height:auto;max-height:520px}
+footer .wrap{display:flex;align-items:center;gap:1rem}
+.me{width:84px;height:84px;border-radius:50%;object-fit:cover;flex:none}
+
+/* FAQ */
+details{border-top:1px solid var(--line);max-width:760px}
+details:last-of-type{border-bottom:1px solid var(--line)}
+summary{cursor:pointer;list-style:none;font-weight:700;padding:1.1rem 2rem 1.1rem 0;position:relative}
+summary::-webkit-details-marker{display:none}
+summary::after{content:"+";position:absolute;right:.2rem;top:.9rem;font-size:1.5rem;line-height:1;color:var(--violet)}
+details[open] summary::after{content:"–"}
+details p{color:var(--muted);margin:0 0 1.2rem;max-width:62ch}
+
+/* Final */
+.final{background:var(--navy);color:#f1f8ef}
+.final h2{max-width:20ch}
+.final p{max-width:56ch;color:#d5e8d1}
+.final .amt{font-size:1.6rem;margin:1.25rem 0 1rem}
+footer{padding:2rem 0 2.5rem;font-size:.95rem}
+footer b{display:block}
+
+/* Barre mobile */
+.bar{position:fixed;left:0;right:0;bottom:0;display:none;align-items:center;justify-content:space-between;gap:1rem;padding:.7rem 1.25rem calc(.7rem + env(safe-area-inset-bottom,0px));background:var(--navy);color:#f1f8ef;font-weight:700;z-index:5}
+.bar .btn{padding:.7rem 1.2rem;font-size:1rem}
+@media (max-width:720px){.bar{display:flex}body{padding-bottom:4.5rem}section{padding:3rem 0}}
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <div class="brand"><img class="logo" src="/_blob/9198a1fd3e2dc451cd5b93f04c784fd2" alt="Logo Kassoum Multi Service Design" width="53" height="58"><span>Kassoum Multi Service Design</span></div>
+    <div class="hg"><div><h1>Et si tu pouvais créer des vidéos spectaculaires grâce à l’intelligence artificielle&nbsp;?</h1>
+    <p class="sub">Découvre le Motion Design nouvelle génération et apprends à transformer tes idées en vidéos professionnelles&nbsp;!</p>
+    <p class="lead">Tu rêves de créer des animations impressionnantes, des publicités animées, des histoires captivantes ou même des films d’action ? Tu souhaites développer tes compétences créatives et proposer de nouveaux services à tes clients ? Cette formation est faite pour toi, même si tu débutes.</p>
+    <div class="cta-row">
+      <a class="btn" href="#prix">Je veux accéder à la formation</a>
+      <small>5&nbsp;000 FCFA, paiement unique, accès à vie</small>
+    </div>
+    </div><div class="hw"><img class="hg-i" src="/_blob/bb3401e471cf28373c87ef8abdb41651" alt="Créateur vidéo qui filme avec un téléphone monté sur un stabilisateur" width="900" height="840"></div></div>
+    <div class="tl" aria-hidden="true">
+      <div class="track">
+        <span class="clip v" style="--l:0%;--w:30%">Pub boutique</span>
+        <span class="clip v" style="--l:33%;--w:26%">Scène d’action</span>
+        <span class="clip v" style="--l:62%;--w:36%">Série d’histoires</span>
+      </div>
+      <div class="track">
+        <span class="clip a" style="--l:4%;--w:40%">Voix off professionnelle</span>
+        <span class="clip a" style="--l:48%;--w:32%">Voix off de la série</span>
+      </div>
+      <div class="track">
+        <span class="clip t" style="--l:0%;--w:22%">Vidéo tendance</span>
+        <span class="clip t" style="--l:25%;--w:30%">Vidéo virale</span>
+        <span class="clip t" style="--l:58%;--w:30%">Animation</span>
+      </div>
+      <i class="head"></i>
+    </div>
+  </div>
+</header>
+
+<main>
+<section id="pourquoi">
+  <div class="wrap">
+    <h2>Pourquoi apprendre le Motion Design avec l’IA&nbsp;?</h2>
+    <p class="muted" style="max-width:62ch">Aujourd’hui, les vidéos animées et les contenus visuels attirent de plus en plus l’attention sur les réseaux sociaux. Les entreprises recherchent des contenus publicitaires originaux, les créateurs veulent se démarquer et les entrepreneurs souhaitent mieux présenter leurs produits.</p>
+    <p><b>Imagine pouvoir créer&nbsp;:</b></p>
+    <ul class="can">
+      <li>Des vidéos publicitaires pour les entreprises et boutiques</li>
+      <li>Des animations et présentations visuelles</li>
+      <li>Des vidéos avec des voix off professionnelles</li>
+      <li>Des histoires sous forme de séries</li>
+      <li>Des scènes de films d’action générées avec l’IA</li>
+      <li>Des vidéos tendances pour les réseaux sociaux</li>
+    </ul>
+    <p class="punch">Tes idées peuvent devenir des créations visuelles impressionnantes.</p>
+  </div>
+</section>
+
+<section id="programme" style="background:var(--surface)">
+  <div class="wrap">
+    <h2>Que contient la formation&nbsp;?</h2>
+    <p class="muted" style="max-width:62ch">Un ensemble de ressources pédagogiques en PDF et en vidéos pour apprendre et pratiquer, étape par étape.</p>
+    <ol class="mods">
+      <li><div><h3>Apprendre le Motion Design avec l’IA</h3><p>Découvre les bases et les possibilités de création offertes par l’intelligence artificielle.</p></div></li>
+      <li><div><h3>Création de vidéos</h3><p>Transforme tes idées en contenus vidéo animés.</p></div></li>
+      <li><div><h3>Voix off professionnelles</h3><p>Apprends à intégrer des voix off adaptées à tes projets audiovisuels.</p></div></li>
+      <li><div><h3>Vidéos publicitaires pour les boutiques</h3><p>Conçois des vidéos pour présenter et promouvoir des produits.</p></div></li>
+      <li><div><h3>Création de films et séries</h3><p>Explore la création de scènes cinématographiques, de films d’action et de séries d’histoires avec l’IA.</p></div></li>
+      <li><div><h3>Prompts et techniques de création</h3><p>Apprends à exploiter des instructions adaptées pour orienter tes créations.</p></div></li>
+    </ol>
+  </div>
+</section>
+
+<section id="bonus">
+  <div class="wrap">
+    <h2>Tes bonus exclusifs</h2>
+    <p class="muted">En plus de la formation principale, tu reçois des ressources complémentaires.</p>
+    <div class="bon">
+      <div><b>Bonus 1</b><h3>12 prompts prêts à copier-coller</h3><p>Des instructions pour lancer tes créations avec l’IA.</p></div>
+      <div><b>Bonus 2</b><h3>Ebook complet de guide Motion Design</h3><p>Un support numérique pour retrouver les explications et accompagner ton apprentissage.</p></div>
+      <div><b>Bonus 3</b><h3>Vidéos virales et tendances</h3><p>Des idées et techniques de contenus adaptés aux réseaux sociaux.</p></div>
+      <div><b>Bonus 4</b><h3>Films d’action et séries d’histoires</h3><p>Des possibilités créatives pour réaliser des séquences cinématographiques et raconter des histoires en vidéo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="public" style="background:var(--surface)">
+  <div class="wrap">
+    <h2>À qui s’adresse cette formation&nbsp;?</h2>
+    <ul class="who">
+      <li>Ceux qui débutent dans la création vidéo</li>
+      <li>Les graphistes qui souhaitent développer leurs compétences</li>
+      <li>Les monteurs vidéo qui veulent enrichir leurs prestations</li>
+      <li>Les créateurs de contenu sur Facebook, TikTok et YouTube</li>
+      <li>Les entrepreneurs qui souhaitent promouvoir leurs produits</li>
+      <li>Toute personne passionnée par l’IA et la création audiovisuelle</li>
+    </ul>
+    <p class="muted">Aucune expertise préalable en Motion Design n’est exigée pour commencer.</p>
+  </div>
+</section>
+
+<section id="realisations">
+  <div class="wrap">
+    <h2>Ce que nos apprenants ont déjà créé</h2>
+    <p class="muted" style="max-width:62ch">Des vidéos réalisées avec l’IA et les techniques du Motion Design. Appuie sur lecture pour les voir.</p>
+    <div class="vids">
+      <figure class="vid" style="margin:0"><video controls playsinline preload="metadata" style="aspect-ratio:9/16" src="/_blob/28be99ac36c94b2f05f475d300efc1df"></video><figcaption>Elvis Ouangraoua<span>Vidéo de vente</span></figcaption></figure>
+      <figure class="vid" style="margin:0"><video controls playsinline preload="metadata" style="aspect-ratio:16/9" src="/_blob/1be4c95f0dd5c7f37daf652a0ad7902c"></video><figcaption>Issa<span>Vidéo d’apprenant</span></figcaption></figure>
+      <figure class="vid" style="margin:0"><video controls playsinline preload="metadata" style="aspect-ratio:9/16" src="/_blob/718a51148ec2b3c08bdda41fc6b1ce4a"></video><figcaption>Larissa<span>Vidéo d’apprenante</span></figcaption></figure>
+      <figure class="vid" style="margin:0"><video controls playsinline preload="metadata" style="aspect-ratio:16/9" src="/_blob/79ce2106a2cbf44d110d05e1aac36b48"></video><figcaption>Moussa<span>Vidéo d’apprenant</span></figcaption></figure>
+    </div>
+    <h3 class="sub2">Plus de réalisations Motion Design</h3>
+    <div class="vids">
+      <figure class="vid" style="margin:0"><video controls playsinline preload="metadata" style="aspect-ratio:4/5" src="/_blob/6a4396b87884e836c091f344c92123b1"></video><figcaption>Vidéo documentaire<span>Kassoum Multi Service Design</span></figcaption></figure>
+      <figure class="vid" style="margin:0"><video controls playsinline preload="metadata" style="aspect-ratio:4/5" src="/_blob/79ce01164d0e61ca1288f2d674b926e6"></video><figcaption>Présentation d’entreprise<span>Kassoum Multi Service Design</span></figcaption></figure>
+      <figure class="vid" style="margin:0"><video controls playsinline preload="metadata" style="aspect-ratio:9/16" src="/_blob/0b873e8a8e11bcd9ad7970681dbfc7af"></video><figcaption>Vidéo Motion Design</figcaption></figure>
+      <figure class="vid" style="margin:0"><video controls playsinline preload="metadata" style="aspect-ratio:16/9" src="/_blob/961a91cb6825fc81e73b3f5c9034a550"></video><figcaption>Essai Motion Design Flow</figcaption></figure>
+      <figure class="vid" style="margin:0"><video controls playsinline preload="metadata" style="aspect-ratio:16/9" src="/_blob/880250012db8858667cb7d974e05fce5"></video><figcaption>Vidéo de formation</figcaption></figure>
+    </div>
+  </div>
+</section>
+
+<section id="prix">
+  <div class="wrap">
+    <div class="price">
+      <h2>Formation complète Motion Design avec l’IA</h2>
+      <p class="amt">5&nbsp;000 <span>FCFA</span></p>
+      <p style="margin:0;color:#d5e8d1">Prix unique. Un seul paiement, pas d’abonnement mensuel.</p>
+      <ul class="incl">
+        <li>La formation en PDF et vidéos</li>
+        <li>L’ebook complet de guide Motion Design</li>
+        <li>Les 12 prompts prêts à utiliser</li>
+        <li>Les ressources sur les voix off professionnelles</li>
+        <li>Les bonus : vidéos virales, films d’action et séries d’histoires</li>
+        <li>Un accès à vie à la formation</li>
+      </ul>
+      <a class="btn" href="#prix" data-cta>Je passe à l’action pour 5&nbsp;000 FCFA</a>
+      <small>Paiement en ligne sécurisé via Chariow</small>
+    </div>
+  </div>
+</section>
+
+<section id="faq" style="background:var(--surface)">
+  <div class="wrap">
+    <h2>Questions fréquentes</h2>
+    <details><summary>Faut-il être un professionnel pour suivre cette formation&nbsp;?</summary><p>Non. La formation s’adresse également aux débutants qui souhaitent découvrir la création vidéo avec l’intelligence artificielle.</p></details>
+    <details><summary>Comment vais-je recevoir la formation&nbsp;?</summary><p>La formation est proposée sous forme de ressources numériques en PDF et en vidéos. L’accès est organisé via la plateforme de vente.</p></details>
+    <details><summary>Puis-je suivre la formation à mon rythme&nbsp;?</summary><p>Oui. Grâce à l’accès à vie, tu consultes les ressources quand tu veux et aussi souvent que tu veux.</p></details>
+    <details><summary>Quel est le prix de la formation&nbsp;?</summary><p>La formation complète est proposée au prix unique de 5&nbsp;000 FCFA.</p></details>
+    <details><summary>Comment effectuer le paiement&nbsp;?</summary><p>Clique sur le bouton d’inscription. Tu seras redirigé vers la page de paiement Chariow pour finaliser ta commande.</p></details>
+    <details><summary>Quels bonus sont inclus&nbsp;?</summary><p>12 prompts prêts à copier-coller, un ebook de guide Motion Design et des ressources sur la création de vidéos virales, de films d’action et de séries d’histoires.</p></details>
+  </div>
+</section>
+
+<section class="final">
+  <div class="wrap">
+    <div class="fg"><div><h2>Ne laisse pas tes idées rester de simples idées&nbsp;!</h2>
+    <p>Le monde de la création audiovisuelle évolue. L’intelligence artificielle ouvre de nouvelles possibilités à ceux qui prennent le temps d’apprendre à l’utiliser. Commence dès maintenant à développer tes compétences et à explorer le potentiel du Motion Design avec l’IA.</p>
+    <p class="amt">5&nbsp;000 FCFA <span>pour accéder à la formation</span></p>
+    <a class="btn" href="#prix" data-cta>Je m’inscris maintenant</a></div><div class="fw"><img class="fi" src="/_blob/60979beaa7e9276f9e77997ca4786552" alt="Jeune homme en tenue blanche brodée de bleu" width="378" height="1050" loading="lazy"></div></div>
+  </div>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">
+    <img class="me" src="/_blob/71e2c8ac925cbdf9dae002e12a05edf1" alt="Portrait de Kassoum Sawadogo" width="84" height="84" loading="lazy"><div><b>Kassoum SAWADOGO</b>
+    <span class="muted">Formateur et créateur de contenu audiovisuel, Kassoum Multi Service Design</span></div>
+  </div>
+</footer>
+
+<div class="bar"><span>5&nbsp;000 FCFA</span><a class="btn" href="#prix" data-cta>Je m’inscris</a></div>
+
+<script>
+// Colle ici le lien de paiement Chariow : tous les boutons d’achat l’utiliseront.
+const CHARIOW_URL = "https://betxrepl.mychariow.shop/prd_ldd8mekt/checkout";
+if (CHARIOW_URL) {
+  document.querySelectorAll("a[data-cta]").forEach(function (a) {
+    a.href = CHARIOW_URL; a.target = "_blank"; a.rel = "noopener";
+  });
+}
+</script>
+</body>
+</html>
